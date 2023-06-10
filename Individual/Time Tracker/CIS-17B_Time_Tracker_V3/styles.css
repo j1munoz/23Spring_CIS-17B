@@ -1,0 +1,232 @@
+#nav a{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1D201F;
+    align-content: center;
+    width: 500px;
+    padding: 20px 20px;
+    box-shadow: inset 0 0 0 0 #F7934C;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: none;
+}
+#nav {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 30px;
+    transition-duration: .5s;
+}
+
+#nav a:hover {
+    color: #F5F5F5;
+    box-shadow: inset 500px 0 0 0 #F7934C;
+}
+
+.menuBtn {
+    border-radius: 12px;
+    padding: 5px;
+}
+
+body {
+    background-color: #D1DEDE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
+    background-color: #1D201F;
+    margin: 0 auto;
+    padding: 5px;
+    padding-bottom: 170px;
+    text-align: center;
+    border: 15px;
+    width: 1000px;
+    height: auto;
+    margin-top: 150px;
+    border-radius: 50px;
+    color: #D1DEDE;
+}
+
+#Users {
+    background-color: #1D201F;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    border: 15px;
+    width: 900px;
+    height: auto;
+    margin-top: 10px;
+    align-content: center;
+}
+
+.data {
+    padding: 10px;
+}
+
+.rows {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    z-index: 10;
+    background-color: red;
+    width: 300px;
+    border-radius: 6px;
+    visibility: hidden;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.edit-button:hover {
+    cursor: pointer;
+}
+
+.delete-button:hover, #submit:hover, #exit:hover, #confirm-delete, #cancel {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.user-choices {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 700px;
+    background-color: #333333; 
+    font-size: 19px;
+}
+
+#user-menu {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    align-content: center;
+    position: relative;
+    display: inline-block;
+    font-size: 19px;
+}
+
+.user-choices:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.show-dropdown {
+    display: none;
+    position: relative;
+    background-color: #333333;
+    overflow: auto;
+    z-index: 1;
+    width: 700px;
+    color: white;
+}
+
+.show {display: block;}
+
+.instructions {
+    list-style-type: none;
+    align-content: center;
+}
+
+#submit-time {
+    transform: translateY(-39px);
+}
+
+#tracked-time {
+    opacity: 0;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    width: 500px;
+    padding: 15px 15px;
+    color: white;
+    background-color: #54c03f;
+    position: absolute;
+    right: 37%;
+    top: 1%;
+    animation: fade-in 1s ease-in forwards, fade-out 1s 8s ease-out forwards;
+}
+
+@keyframes fade-in {
+    100%{opacity: 1}
+}
+
+@keyframes fade-out {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.return {
+    border-radius: 12px;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #187795;
+    color: #F5F5F5;
+    transition-duration: .5s;
+}
+
+.return:hover {
+    background-color: #2589BD;
+    color: #F5F5F5;
+}
+
+.enter {
+    border-radius: 12px;
+    width: 120px;
+    font-size: 19px;
+    padding: 7px 7px;
+    background-color: #187795;
+    color: #F5F5F5;
+    transition-duration: .5s;
+    border-color: #187795;
+    padding-bottom: 5px;
+}
+
+.enter:hover {
+    background-color: #2589BD;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-color: #2589BD;
+}
+
+.returnAdmin, .edit-button, .delete-button {
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    color: #1D201F;
+    transition: 0.4s ease;
+}
+
+.returnAdmin:hover, .edit-button:hover, .delete-button:hover {
+    background-color: #F7934C;
+    color: white;
+    cursor: pointer;
+}
